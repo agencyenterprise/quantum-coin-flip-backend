@@ -10,11 +10,15 @@ Install the dependencies:
 
 `pipenv install`
 
-Copy the .env.sample to a .env file, and replace the API keys with real API keys.
+Copy the .env.sample to a .env file. If you want to run against real APIs, then replace the API keys with real API keys. Otherwise, just leave `MOCK_BACKEND` as `true`.
+
+Start up your mongo DB locally:
+
+`docker-compose up -d`
 
 If you want to run a script, do it like so:
 
-`python app/getCoinFlips.py`
+`pipenv run python app/getCoinFlips.py`
 
 Or if you want to test that it works in Heroku:
 
