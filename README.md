@@ -12,12 +12,10 @@ Install the dependencies:
 
 Copy the .env.sample to a .env file, and replace the API keys with real API keys.
 
-Run the app in development mode:
+If you want to run a script, do it like so:
 
-`npm start`
+`python app/getCoinFlips.py`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Or if you want to test that it works in Heroku:
 
-## Learn more about Nullstack
-
-[Read the documentation](https://nullstack.app/documentation)
+`heroku run python getCoinFlips.py`
