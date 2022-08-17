@@ -19,7 +19,3 @@ Start up your mongo DB locally:
 If you want to run a script, do it like so:
 
 `pipenv run python app/getCoinFlips.py`
-
-Or if you want to test that it works in Heroku:
-
-`heroku run python getCoinFlips.py`
