@@ -22,7 +22,7 @@ NUM_SHOTS = 20000
 
 db = MongoClient(DB_URL).db
 available_results = db.flips.count_documents({"hasBeenUsed": False})
-if available_results > 5000:
+if available_results > 50000:
     print("{} results present, not running".format(available_results))
     quit()
 
